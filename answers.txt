@@ -1,0 +1,12 @@
+1. As told in lecture m must be less than n, becuase m mod n will equal 
+   m. The message will be altered so the encryption will not work out 
+   properly anymore, if m is greater than n, since m mod n will no longer be m. Cryptosystems in general will break down the message
+   into packets to make sure that each part is less than n. 
+
+
+2. If you encrypt the same message twice it will return the same value
+   each time. This allows a chosen plaintext attack. If you send 0s and 1s
+   you know what a 0 or a 1 encodes to. Thus if you are watching over a message
+   passing sequence, you can find out what certain phrases or words encode to
+   so when you see those words appear in the passing of messages between Alice
+   and Bob, you'll know what words mapped to what specific encrypted values. 
